@@ -11,12 +11,6 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/home/michaelvdnest/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -121,9 +115,6 @@ export PATH="$HOME/gems/bin:$PATH"
 
 # instruct linux to send emacs to your running X Server
 export DISPLAY=$(grep -m 1 nameserver /etc/resolv.conf | awk '{print $2}'):0.0
-
-# Enables highlighting of commands
-source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Path to doom scripts
 export PATH="$HOME/.emacs.d/bin:$PATH"
