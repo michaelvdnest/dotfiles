@@ -1,2 +1,6 @@
 # Ignore oh my zsh cache directory
 .oh-my-zsh/cache
+
+# Ignore chezmoi specific files
+README.md
+images
