@@ -128,16 +128,16 @@ __conda_setup="$('/home/michaelvdnest/mambaforge/bin/conda' 'shell.zsh' 'hook' 2
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "$HOME/mambaforge/etc/profile.d/conda.sh" ]; then
-        . "$HOME/mambaforge/etc/profile.d/conda.sh"
+    if [ -f "/home/michaelvdnest/mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/home/michaelvdnest/mambaforge/etc/profile.d/conda.sh"
     else
-        export PATH="$HOME/mambaforge/bin:$PATH"
+        export PATH="/home/michaelvdnest/mambaforge/bin:$PATH"
     fi
 fi
 unset __conda_setup
 
-if [ -f "$HOME/mambaforge/etc/profile.d/mamba.sh" ]; then
-    . "$HOME/mambaforge/etc/profile.d/mamba.sh"
+if [ -f "home/michaelvdnest/mambaforge/etc/profile.d/mamba.sh" ]; then
+    . "/home/michaelvdnest/mambaforge/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
 
