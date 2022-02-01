@@ -147,3 +147,4 @@ export PATH="$HOME/.local/bin:$PATH"
 # virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+conda deactivate
