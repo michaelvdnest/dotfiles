@@ -4,3 +4,9 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
+[".config/nvim/pack/packager/opt/vim-packager"]
+    type = "file"
+    url = "https://github.com/kristijanhusak/vim-packager/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
