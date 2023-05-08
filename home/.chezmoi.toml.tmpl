@@ -1,2 +1,13 @@
 {{- $name := "Michael van der Nest" -}}{{/* Default name */}}
 {{- $email := "michaelvdnest@gmail.com" -}}{{/* Default email */}}
+
+{{- $wsl := or (env "WSL_DISTRO_NAME") (env "IS_WSL") | not | not -}}
+
+{{/* Here we "export" the variables, so we can access them outside this file */ -}}
+[data]
+  is_wsl = {{ $wsl }}
+
+  name = "{{ $name }}"
+  email = "{{ $email }}"
+
+  editor = "code --wait"
