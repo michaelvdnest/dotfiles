@@ -82,7 +82,13 @@ Create a file in your chezmoi repo at this location: private_dot_ssh/private_id_
 
 This is still very much a work in progress. 
 
-**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
+**Warning:** I don't recommend that you give these dotfiles a try. However, if you want to give it a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
+
+You can look into the following repo's if you want to try a dotfiles repo as a base:
+
+- https://github.com/felipecrs/dotfiles/tree/master
+- https://github.com/szorfein/dots/tree/master
+
 
 ## TODO
 
