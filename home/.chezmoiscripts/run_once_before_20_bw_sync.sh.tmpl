@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# {{ if .is_personal }}
+echo "Log into Bitwarden"
+export BW_SESSION=$(bw login $BITWARDEN_EMAIL --raw)
+bw sync
+# {{ end }}
+

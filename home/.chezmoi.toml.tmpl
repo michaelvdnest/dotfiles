@@ -1,13 +1,23 @@
-{{- $name := "Michael van der Nest" -}}{{/* Default name */}}
-{{- $email := "michaelvdnest@gmail.com" -}}{{/* Default email */}}
+{{ $username := "michaelvdnest" }}
+{{ $name := "Michael van der Nest" }}
+{{ $email := "michaelvdnest@gmail.com" }}
 
-{{- $wsl := or (env "WSL_DISTRO_NAME") (env "IS_WSL") | not | not -}}
+{{ $wsl := or (env "WSL_DISTRO_NAME") (env "IS_WSL") | not | not }}
+
+{{ $personal := false }}
+{{ if eq $username "michaelvdnest" }}
+{{ $personal := true }}
+{{ end }}
+
+
 
 {{/* Here we "export" the variables, so we can access them outside this file */ -}}
 [data]
   is_wsl = {{ $wsl }}
 
+  username = "{{ $username }}"
   name = "{{ $name }}"
   email = "{{ $email }}"
+  is_personal = "{{ $personal }}"
 
   editor = "code --wait"

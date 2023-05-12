@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# {{ if .is_personal }}
+win_home="$(wslvar USERPROFILE)"
+win_home="$(wslpath "${win_home}")"
+
+rm "${HOME}/dropbox"
+ln -s "${win_home}/Dropbox" "${HOME}/dropbox"
+
+rm "${HOME}/downloads"
+ln -s "${win_home}/Download" "${HOME}/download"
+# {{- end -}}
+
