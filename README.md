@@ -50,7 +50,7 @@ The public key can just stored as a normal in chezmoi.
 
 ### Store the private key
 
-Login into Bitward using the [bitwarden-cli] and unlock the vault. 
+Login into Bitwarden using the [bitwarden-cli] and unlock the vault. 
 
 ```sh
 > bw login <EMAIL-ADDRESS>
